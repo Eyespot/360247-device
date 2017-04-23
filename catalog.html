@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс-Каталог</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="header-logo">
-                <img src="http://placehold.it/150x100" width="" height="" alt="Device">
+                <img src="img/header-logo.png" width="164" height="36" alt="Device">
             </div>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <input type="image" name="search-submit" src="http://placehold.it/20x20" alt="Найти">
@@ -42,43 +43,43 @@
             </nav>
         </header>
         <main>
-            <h1>Моноподы для селфи</h1>
+            <h2>Моноподы для селфи</h2>
             <section class="breadcrumbs">
                 <a href="#">Главная</a>
                 <a href="#">Католог товаров</a>
                 <a class="active" href="#">Моноподы для селфи</a>
             </section>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-                <h2>Фильтр:</h2>
-                <div class="price-input">
-                    <p><b>Стоимость</b></p>
+                <h3>Фильтр:</h3>
+                <fieldset class="price-input">
+                    <legend>Стоимость</legend>
                     <input type="range" name="price-filter" id="price-range" min="0" max="5000" step="500">
                     <p>от 0 до 5000</p>
-                </div>
-                <div class="color-input">
-                    <p><b>Цвет</b></p>
-                    <input type="checkbox" name="black-filter" id="black">
+                </fieldset>
+                <fieldset class="color-input">
+                    <legend>Цвет</legend>
+                    <input type="checkbox" name="color-filter" id="black" value="black">
                     <label for="black">Черный</label>
-                    <input type="checkbox" name="white-filter" id="white">
+                    <input type="checkbox" name="color-filter" id="white" value="white">
                     <label for="white">Белый</label>
-                    <input type="checkbox" name="blue-filter" id="blue">
+                    <input type="checkbox" name="color-filter" id="blue" value="blue">
                     <label for="blue">Синий</label>
-                    <input type="checkbox" name="red-filter" id="red">
+                    <input type="checkbox" name="color-filter" id="red" value="red">
                     <label for="red">Красный</label>
-                    <input type="checkbox" name="pink-filter" id="pink">
+                    <input type="checkbox" name="color-filter" id="pink" value="pink">
                     <label for="pink">Розовый</label>
-                </div>
-                <div>
-                    <p><b>Bluetooth</b></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Bluetooth</legend>
                     <input type="radio" name="Bluetooth-filter" id="yes" value="Есть">
                     <label for="yes">Есть</label>
                     <input type="radio" name="Bluetooth-filter" id="no" value="Нет">
                     <label for="no">Нет</label>
-                    <input type="submit" name="submit-filter" value="Показать">
-                </div>
+                    <button type="submit" name="submit-filter" value="filtered">Показать</button>
+                </fieldset>
             </form>
             <section class="sort">
-                <h2>Сортировка:</h2>
+                <h3>Сортировка:</h3>
                 <a class="price-sort" href="#">По цене</a>
                 <a class="type-sort" href="#">По типу</a>
                 <a class="popular-sort" href="#">По популярности</a>
@@ -87,30 +88,30 @@
             </section>
             <section class="catalog-items">
                 <div class="catalog-item">
-                    <img src="http://placehold.it/250x250" alt="Любительская селфи-палка" width="" height="">
-                    <h3>Любительская селфи-палка</h3>
-                    <span>500 руб.</span>
+                    <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <h4>Любительская селфи-палка</h4>
+                    <p>500 руб.</p>
                     <a class="btn" href="#">В корзину</a>
                     <a class="btn" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item">
-                    <img src="http://placehold.it/250x250" alt="Профессиональная селфи-палка" width="" height="">
-                    <h3>Профессиональная селфи-палка</h3>
-                    <span>1500 руб.</span>
+                    <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                    <h4>Профессиональная селфи-палка</h4>
+                    <p>1500 руб.</p>
                     <a class="btn" href="#">В корзину</a>
                     <a class="btn" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item">
-                    <img src="http://placehold.it/250x250" alt="Непотопляемая селфи-палка" width="" height="">
-                    <h3>Непотопляемая селфи-палка</h3>
-                    <span>2500 руб.</span>
+                    <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                    <h4>Непотопляемая селфи-палка</h4>
+                    <p>2500 руб.</p>
                     <a class="btn" href="#">В корзину</a>
                     <a class="btn" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item">
-                    <img src="http://placehold.it/250x250" alt="Селфи-палка «Следуй за мной»" width="" height="">
-                    <h3>Селфи-палка «Следуй за мной»</h3>
-                    <span>4900 руб.</span>
+                    <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                    <h4>Селфи-палка «Следуй за мной»</h4>
+                    <p>4900 руб.</p>
                     <a class="btn" href="#">В корзину</a>
                     <a class="btn" href="#">Добавить к сравнению</a>
                 </div>
@@ -125,7 +126,7 @@
         </main>
         <footer>
             <div class="footer-logo">
-                <img src="http://placehold.it/150x100" width="" height="" alt="Device">
+                <img src="img/footer-logo.png" width="163" height="36" alt="Device">
             </div>
             <div class="user-block">
                 <a class="login" href="#">Выйти</a>
@@ -147,7 +148,7 @@
                 <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
             </div>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="http://placehold.it/70x70" alt="HTMLacademy">
+                <img src="img/htmlacademy.svg" alt="HTMLacademy">
             </a>
         </footer>
     </body>
