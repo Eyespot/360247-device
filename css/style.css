@@ -9,7 +9,8 @@ body {
 .title1 {
     font-size: 47px;
     color: #000000;
-    font-weight: 900;
+    line-height: 1.2em;
+    font-weight: 700;
     font-family: "Gilroy", "Arial", sans-serif;
 }
 
@@ -53,6 +54,10 @@ main {
 
 .container-catalog {
     min-height: 185px;
+}
+
+.block-vision1 {
+    background-color: #f7e296;
 }
 
 .header-topline,
@@ -109,15 +114,19 @@ main {
 }
 
 .catalog-menu {
-    position: absolute;
+    position: relative;
+    left: -60px;
+    width: 1120px;
+    min-height: 132px;
     font-size: 0;
-    vertical-align: middle;
     display: none;
+    background-color: #f7e296;
+    z-index: 1;
 }
 
 .catalog-menu li {
     font-size: 15px;
-    margin-right: 20px; 
+    margin-right: 20px;
     display: inline-block;
 }
 
@@ -126,27 +135,81 @@ main {
 }
 
 .slider {
-    margin-bottom: 100px;
+    position: relative;
+    top: -142px;
 }
 
-.slider-item3,
-.slider-item2 {
+.slider input[type=radio] {
     display: none;
 }
 
-.slider-image {
+.slider-controls label {
     position: relative;
-    left: 89px;
-    top: -142px;
+    z-index: 1;
+    left: 950px;
+    top: 300px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #cccccc;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+    background-color: #666666;
+}
+
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+    background-color: #666666;
+}
+
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #666666;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-1160px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-2320px);
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slider-item {
+    float: left;
+    width: 1040px;
+    padding:  0 60px;
+}
+
+.slider-slides {
+    width: 300%;
+}
+
+.slider-image {
+/*    position: relative;*/
+/*    top: -142px;*/
     float: left;
     width: 384px;
-    margin-right: 220px;
 }
 
 .slider-info {
+/*    position: relative;*/
+/*    top: -142px;*/
     float: right;
-    width: 480px;
-    margin-right: 75px;
+    width: 500px;
+    min-height: 365px;
 }
 
 .specification li {
@@ -154,7 +217,7 @@ main {
 }
 
 .popular {
-    margin-bottom: 150px;
+    min-height:  530px;
 }
 
 .popular-list {
