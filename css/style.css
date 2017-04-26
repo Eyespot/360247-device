@@ -352,6 +352,30 @@ main {
     float: left;
 }
 
+.arrow {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 0;
+}
+
+.arrow::before {
+    display: inline-block;
+    content: "";
+    border: 10px solid #0074d9;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.arrow-up::before {
+    border-top-width: 0;
+}
+
+.arrow-down::before {
+    border-bottom-width: 0;
+}
+
 .catalog-item {
     float: right;
     width: 360px;
