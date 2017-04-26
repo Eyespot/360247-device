@@ -260,7 +260,6 @@ main {
 .aboutus {
     float: left;
     width: 460px;
-    margin-right: 135px;
 }
 
 .contacts {
@@ -289,7 +288,6 @@ main {
 .footer-nav {
     float: left;
     width: 440px;
-    margin-right: 180px;
 }
 
 .footer-nav li {
@@ -329,6 +327,10 @@ main {
     margin: 0;
 }
 
+.price-input input[type="range"] {
+    cursor: pointer;
+}
+
 .price-input input,
 .color-input input,
 .bluetooth-input input {
@@ -342,14 +344,12 @@ main {
 
 .sort h3 {
     float: left;
-    width: 198px;
     margin: 0;
     padding-left: 72px
 }
 
 .sort-list {
-    float: right;
-    width: 555px;
+    float: left;
 }
 
 .catalog-item {
