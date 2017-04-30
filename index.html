@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -13,8 +14,9 @@
                         <img src="img/header-logo.png" width="164" height="36" alt="Device">
                     </div>
                     <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                        <input type="image" name="search-submit" src="http://placehold.it/20x20" alt="Найти">
+                        <input type="image" name="search-submit" src="img/search.svg" width="16" height="16" alt="Найти">
                         <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+                        <button type="submit" class="search-btn">Hайти</button>
                     </form>
                     <div class="header-user-block">
                         <a class="login" href="#">Войти</a>
@@ -23,18 +25,19 @@
                     </div>
                 </div>
                 <nav class="main-navigation clearfix">
-                    <div class="catalog">
-                        <a>Каталог товаров</a>
-                        <input class="catalog-opener" type="checkbox" name="+" id="opener">
-                        <ul class="catalog-menu">
-                            <li><a href="#1">Виртуальная реальность</a></li>
-                            <li><a href="catalog.html">Моноподы для селфи</a></li>
-                            <li><a href="#3">Экшн-камеры</a></li>
-                            <li><a href="#4">Фитнес-браслеты</a></li>
-                            <li><a href="#5">Умные часы</a></li>
-                            <li><a href="#6">Квадрокоптеры</a></li>
-                        </ul>
-                    </div>
+                    <ul class="catalog">
+                        <li>
+                            <a href="#" class="catalog-title">Каталог товаров</a>
+                            <ul class="catalog-menu">
+                                <li><a href="#1">Виртуальная реальность</a></li>
+                                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                                <li><a href="#3">Экшн-камеры</a></li>
+                                <li><a href="#4">Фитнес-браслеты</a></li>
+                                <li><a href="#5">Умные часы</a></li><br>
+                                <li><a href="#6">Квадрокоптеры</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                     <div class="services-menu">
                         <a href="#delivery">Доставка</a>
                         <a href="#warranty">Гарантия</a>
@@ -207,41 +210,43 @@
                 </div>
             </section>
         </main>
-        <footer class="main-footer container">
-            <div class="footer-topline clearfix">
-                <div class="footer-logo">
-                    <img src="img/footer-logo.png" width="163" height="36" alt="Device">
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-topline clearfix">
+                    <div class="footer-logo">
+                        <img src="img/footer-logo.png" width="163" height="36" alt="Device">
+                    </div>
+                    <div class="footer-user-block">
+                        <a class="login" href="#">Войти</a>
+                        <a class="login" href="#">Сравнить</a>
+                        <a class="login" href="#">Корзина</a>
+                    </div>
                 </div>
-                <div class="footer-user-block">
-                    <a class="login" href="#">Войти</a>
-                    <a class="login" href="#">Сравнить</a>
-                    <a class="login" href="#">Корзина</a>
+                <div class="footer-middleline clearfix">
+                    <div class="adress">
+                        <p>г. Москва, ул. Строителей, 15</p>
+                    </div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#delivery">Доставка</a></li>
+                            <li><a href="#warranty">Гарантия</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="phone-number">
+                        <p>Тел.: +7 (495) 495-95-95</p>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-middleline clearfix">
-                <div class="adress">
-                    <p>г. Москва, ул. Строителей, 15</p>
+                <div class="footer-bottomline clearfix">
+                    <div class="social">
+                        <a class="social-btn social-btn-fb" href="https://www.facebook.com/">Фейсбук</a>
+                        <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
+                        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+                    </div>
+                    <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img src="img/htmlacademy.svg" alt="HTMLacademy">
+                    </a>
                 </div>
-                <nav class="footer-nav">
-                    <ul>
-                        <li><a href="#delivery">Доставка</a></li>
-                        <li><a href="#warranty">Гарантия</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="phone-number">
-                    <p>Тел.: +7 (495) 495-95-95</p>
-                </div>
-            </div>
-            <div class="footer-bottomline clearfix">
-                <div class="social">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-                </div>
-                <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="img/htmlacademy.svg" alt="HTMLacademy">
-                </a>
             </div>
         </footer>
     </body>
