@@ -346,16 +346,24 @@ body {
 .slider-controls label {
     position: relative;
     z-index: 1;
-    left: 950px;
-    top: 300px;
+    left: 997px;
+    top: 348px;
     display: inline-block;
     width: 4px;
     height: 4px;
     margin: 0 3px;
-    margin-right: 23px;
+    margin-right: 17px;
     cursor: pointer;
     border-radius: 50%;
-    border: 3px solid #b2b2b2;
+    border: 3px solid rgba(178, 178, 178, 0.3);
+}
+
+.slider-controls label:hover {
+    border: 3px solid rgba(153, 153, 153, 0.4);
+}
+
+.slider-controls label:active {
+border: 3px solid rgba(0, 0, 0, 1);
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"] {
@@ -402,11 +410,54 @@ body {
 }
 
 .slider-info {
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
     position: relative;
     float: right;
     width: 500px;
     min-height: 365px;
     z-index: 1;
+}
+
+.slider-info a {
+    margin: 0;
+    padding: 5px 45px;
+    padding-left: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Gilroy";
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    width: 220px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.slider-info a::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: -45px;
+    top: -18px;
+    width: 220px;
+    height: 6px;
+    background: #f0c52e;
+    box-shadow: 0 0 0 1px f4d361;
+    z-index: -1;
+}
+
+.slider-info a:hover::after {
+    height: 100%;
+    top: -30px;
+    box-shadow: none;
+}
+
+.slider-info a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-number {
@@ -431,11 +482,42 @@ body {
 }
 
 .popular-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     min-height: 230px;
 }
 
 .popular-list li {
-    display: inline-block;
+    list-style: none;
+}
+
+.popular-item {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 160px;
+    height: 160px;
+    font-family: "Gilroy";
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-decoration: none;
+    background: url("../img/popular-1.png") #f7e296 no-repeat center;
+}
+
+.popular-item:hover {
+    background: url("../img/popular-1.png") #f0c52e no-repeat center;
+}
+
+.popular-item:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-item p {
+    position: relative;
+    top: 160px;
 }
 
 .services {
@@ -523,7 +605,6 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-/*    background: #464646;*/
     margin-right: 16px;
     vertical-align: middle;
     border-radius: 50%;
