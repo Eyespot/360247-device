@@ -73,7 +73,7 @@ body {
 .container,
 .container-catalog {
     width: 1160px;
-    min-height: 300px;
+    min-height: 299px;
     margin: 0 auto;
 }
 
@@ -250,6 +250,16 @@ body {
     opacity: 0.3;
 }
 
+.main-navigation::after {
+    content: "";
+    position: absolute;
+    left: 600px;
+    top: 115px;
+    width: 100px;
+    height: 7px;
+    background-color: #ffffff;
+}
+
 .catalog {
     margin: 0;
     padding: 0;
@@ -342,6 +352,7 @@ body {
     width: 4px;
     height: 4px;
     margin: 0 3px;
+    margin-right: 23px;
     cursor: pointer;
     border-radius: 50%;
     border: 3px solid #b2b2b2;
@@ -391,9 +402,24 @@ body {
 }
 
 .slider-info {
+    position: relative;
     float: right;
     width: 500px;
     min-height: 365px;
+    z-index: 1;
+}
+
+.slider-number {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-family: "Gilroy";
+    font-size: 180px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    right: -14px;
+    top: 51px;
+    z-index: -1;
 }
 
 .specification li {
