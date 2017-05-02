@@ -504,20 +504,61 @@ border: 3px solid rgba(0, 0, 0, 1);
     letter-spacing: 0.01em;
     color: #000000;
     text-decoration: none;
-    background: url("../img/popular-1.png") #f7e296 no-repeat center;
+    background: url("../img/popularspritesheet.png") #f7e296 no-repeat 5px 25px;
 }
 
 .popular-item:hover {
-    background: url("../img/popular-1.png") #f0c52e no-repeat center;
+    background-color: #f0c52e;
 }
 
 .popular-item:active {
+    background-position: -152px 25px;
     color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-2 {
+    background-position: -305px 12px;
+}
+
+.popular-2:active {
+    background-position: -451px 12px;
+}
+
+.popular-3 {
+    background-position: -585px 12px;
+}
+
+.popular-3:active {
+    background-position: -716px 12px;
+}
+
+.popular-4 {
+    background-position: -870px 25px;
+}
+
+.popular-4:active {
+    background-position: -1037px 25px;
+}
+
+.popular-5 {
+    background-position: -1177px 5px;
+}
+
+.popular-5:active {
+    background-position: -1293px 5px;
+}
+
+.popular-6 {
+    background-position: -1450px 25px;
+}
+
+.popular-6:active {
+    background-position: -1642px 25px;
 }
 
 .popular-item p {
     position: relative;
-    top: 160px;
+    top: 190px;
 }
 
 .services {
