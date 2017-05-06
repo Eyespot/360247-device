@@ -13,8 +13,7 @@
                     <div class="header-logo">
                         <img src="img/header-logo.png" width="164" height="36" alt="Device">
                     </div>
-                    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                        <input type="image" name="search-submit" src="img/search.svg" width="16" height="16" alt="Найти">
+                    <form class="search-form clearfix" action="https://echo.htmlacademy.ru" method="get">
                         <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
                         <button type="submit" class="search-btn">Hайти</button>
                     </form>
@@ -46,26 +45,26 @@
                 </nav>
             </div>
         </header>
-        <main class="container">
-            <section class="slider clearfix">
+        <main>
+            <section class="slider container clearfix">
                 <input type="radio" id="btn-1" name="toggle-slider" checked>
                 <input type="radio" id="btn-2" name="toggle-slider">
                 <input type="radio" id="btn-3" name="toggle-slider">
-                <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
-                </div>
                 <div class="slider-inner">
+                    <div class="slider-controls">
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                        <label for="btn-3"></label>
+                    </div>
                     <div class="slider-slides clearfix">
                         <div class="slider-item clearfix">
-                            <div class="slider-image">
+                            <div class="slider-image selfy-stick">
                                 <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
                             </div>
                             <div class="slider-info">
                                 <p class="slider-number">01</p>
                                 <h2 class="title1">Делай селфи,<br> как Бен Стиллер!</h2>
-                                <p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
+                                <p class="info-description">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
                                 <a href="#">Подробнее</a>
                                 <ul class="specification">
                                     <li class="specification-info">
@@ -84,13 +83,13 @@
                             </div>
                         </div>
                         <div class="slider-item clearfix">
-                            <div class="slider-image">
+                            <div class="slider-image eatingagain">
                                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
                             </div>
                             <div class="slider-info">
                                 <p class="slider-number">02</p>
                                 <h2 class="title1">Худеем правильно!</h2>
-                                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и  соблюдать диету.</p>
+                                <p class="info-description">Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и  соблюдать диету.</p>
                                 <a href="#">Подробнее</a>
                                 <ul class="specification">
                                     <li class="specification-info">
@@ -100,14 +99,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="slider-item">
-                            <div class="slider-image">
+                        <div class="slider-item clearfix">
+                            <div class="slider-image quadro">
                                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                             </div>
                             <div class="slider-info">
                                 <p class="slider-number">03</p>
                                 <h2 class="title1">Порхает как бабочка, жалит как пчела!</h2>
-                                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
+                                <p class="info-description">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
                                 <a href="#">Подробнее</a>
                                 <ul class="specification">
                                     <li class="specification-info">
@@ -124,7 +123,7 @@
                     </div>
                 </div>
             </section>
-            <nav class="popular">
+            <nav class="popular container">
                 <ul class="popular-list">
                     <li>
                         <a href="#1" class="popular-1 popular-item">
@@ -159,35 +158,40 @@
                 </ul>
             </nav>
             <section class="services clearfix">
-                <div class="slider-control2">
+                <div class="container">
                     <input type="radio" id="btn-4" name="toggle-services" checked>
                     <input type="radio" id="btn-5" name="toggle-services">
                     <input type="radio" id="btn-6" name="toggle-services">
                     <div class="slider-controls2">
-                        <label for="btn-4">Доставка</label>
-                        <label for="btn-5">Гарантия</label>
-                        <label for="btn-6">Кредит</label>
+                            <label for="btn-4">Доставка</label>
+                            <label for="btn-5">Гарантия</label>
+                            <label for="btn-6">Кредит</label>
                     </div>
-                </div>
-                <div class="services-inner">
-                    <div class="delivery service-block">
-                        <h2 class="title1">Доставка</h2>
-                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь, мы не плохо заработаем, поднимая его на ваш этаж!</p>
-                        <img src="http://placehold.it/150x100" alt="Доставка">
-                    </div>
-                    <div class="warranty service-block">
-                        <h2 class="title1">Гарантия</h2>
-                        <p>Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар не дом, конечно же.</p>
-                        <img src="http://placehold.it/150x100" alt="Гарантия">
-                    </div>
-                    <div class="credit service-block">
-                        <h2 class="title1">Кредит</h2>
-                        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                        <img src="http://placehold.it/150x100" alt="Кредит">
+                    <div class="services-inner clearfix">
+                        <div class="services-slides clearfix">
+                            <div class="delivery service-block">
+                                <h2 class="title1">Доставка</h2>
+                                <p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
+                                подъезду совершенно бесплатно! Ведь, мы не плохо<br>
+                                заработаем, поднимая его на ваш этаж!</p>
+                            </div>
+                            <div class="warranty service-block">
+                                <h2 class="title1">Гарантия</h2>
+                                <p>Если из-за возгарания купленного у нас товара у вас сгорит<br>
+                                дом - не переживайте, мы выдадим вам новый.<br>
+                                Товар не дом, конечно же.</p>
+                            </div>
+                            <div class="credit service-block">
+                                <h2 class="title1">Кредит</h2>
+                                <p>Залезть в долговую яму стало проще! Кредитные<br>
+                                консультанты подберут для вас наиболее выгодные<br>
+                                условия кредита. Выгодные для нашего банка, разумеется.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="logotypes clearfix">
+            <section class="logotypes container clearfix">
                 <a href="#DJI">
                     <img src="img/logo-1.jpg" width="260" height="100" alt="DJI">
                 </a>
@@ -201,24 +205,25 @@
                     <img src="img/logo-4.jpg" width="260" height="100" alt="Vive">
                 </a>
             </section>
-            <section class="info clearfix">
+            <section class="info container clearfix">
                 <div class="aboutus">
                     <h2 class="title1">О нас</h2>
-                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                    <ul>
+                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    <ul class="transport">
                         <li>Деловые Линии</li>
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a href="#aboutus">Подробнее о нас</a>
+                    <a class="about-us" href="#aboutus">Подробнее о нас</a>
                 </div>
                 <div class="contacts">
                     <h2 class="title1">Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a href="#map">
+                    <a class="map" href="#map">
                         <img src="img/map.jpg" width="560" height="222" alt="Vive">
                     </a>
-                    <a href="#">Напишите нам</a>
+                    <a class="writeus" href="#">Напишите нам</a>
                     <form action="https://echo.htmlacademy.ru" method="get">
                         <div>
                             <label for="name-field">Ваше имя:</label>
@@ -267,11 +272,11 @@
                 <div class="footer-bottomline clearfix">
                     <div class="social">
                         <a class="social-btn social-btn-fb" href="https://www.facebook.com/">Фейсбук</a>
-                        <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-                        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+                        <a class="social-btn social-btn-insta" href="https://www.instagram.com">Инстаграм</a>
+                        <a class="social-btn social-btn-tw" href="https://twitter.com">Твиттер</a>
                     </div>
                     <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">
-                        <img src="img/htmlacademy.svg" alt="HTMLacademy">
+                        <img src="img/htmlacademy.png" width="27" height="34" alt="HTMLacademy">
                     </a>
                 </div>
             </div>
