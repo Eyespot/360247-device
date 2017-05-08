@@ -834,6 +834,7 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .info {
     margin-top: -97px;
+    margin-bottom: 87px;
 }
 
 .info .title1 {
@@ -939,7 +940,7 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .main-footer {
-    margin-top: 87px;
+/*    margin-top: 87px;*/
     min-height: 323px;
     color: #ffffff;
     background: #464646;
@@ -1118,6 +1119,12 @@ border: 3px solid rgba(0, 0, 0, 1);
     opacity: 0.3;
 }
 
+.flogo {
+    position: relative;
+    top: -5px;
+    left: -2px;
+}
+
 .profiled-header-user-block a:nth-child(2) {
     margin-right: 20px;
     opacity: 0.3;
@@ -1178,19 +1185,23 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .filter {
     float: left;
-    margin-top: 28px;
+    margin-top: 9px;
     padding-left: 60px;
     width: 270px;
-    height: 1280px;
+    height: 1283px;
 }
 
 .filter h3 {
     margin: 0;
+    padding: 0;
+    padding-top: 19px;
+    min-height: 50px;
+    background-color: #dcdcdc;
 }
 
 .filter fieldset {
     margin: 0;
-    margin-top: 99px;
+    margin-top: 79px;
     padding: 0;
     font-size: 14px;
     color: #000000;
@@ -1478,11 +1489,14 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .sort-list {
+    float: right;
     margin: 0;
+    margin-bottom: 70px;
     padding: 0;
     padding-top: 19px;
+    min-height: 50px;
     font-size: 0;
-    float: right;
+    background-color: #ebebeb;
 }
 .sort-list a {
     display: inline-block;
@@ -1571,7 +1585,7 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .catalog-item {
     position: relative;
-    margin-top: 70px;
+    margin-bottom: 37px;
     float: right;
     width: 360px;
     margin-left: 40px;
@@ -1644,67 +1658,35 @@ border: 3px solid rgba(0, 0, 0, 1);
     color: rgba(0, 0, 0, 0.2);
 }
 
-.paginator {
+.catalog-item .item-info {
+    padding-top: 20px;
+}
+
+.title3 {
+    margin: 0;
+    padding: 0;
     float: left;
 }
 
-/*======================================
- Визуализация блоков
-=======================================*/
-
-
-.main-header,
-main,
-.main-footer {
-/*
-    outline: 3px solid green;
-    background-color: lightgreen;
-*/
+.title3 a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/*удалить классы vision*/
-
-.block-vision1,
-.slider,
-.popular,
-.services,
-.logotypes,
-.info,
-.block-vision2,
-/*стр2*/.breadcrumbs,
-.catalog-content {
-/*
-    outline: 3px solid red;
-    background-color: pink;
-*/
+.catalog-item p {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    float: right;
 }
 
-.header-logo,
-.search-form,
-.header-user-block,
-.main-navigation,
-.submenu,
-.slider-control,
-.slider-image,
-.slider-info,
-.popular-list,
-.service-block,
-.logotypes a,
-.aboutus,
-.contacts,
-.footer-logo,
-.footer-user-block,
-.main-footer .adress,
-.footer-nav,
-.main-footer .phone-number,
-.social,
-.academy,
-/*стр2*/.breadcrumbs h2,
-.breadcrumbs a,
-.filter,
-.items-block {
-/*
-    outline: 3px solid yellow;
-    background-color: #f7e296;
-*/
+.paginator {
+    margin-top: -12px;
+    width: 760px;
+    min-height: 70px;
+    float: right;
+    background-color: #ebebeb;
 }
