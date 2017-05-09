@@ -143,8 +143,7 @@ body {
 }
 
 .search-form input::-webkit-input-placeholder {
-    color: #000000;
-    
+    color: #000000;  
 }
 
 .search-form input[type="text"] {
@@ -960,12 +959,212 @@ border: 3px solid rgba(0, 0, 0, 1);
     color: rgba(0, 0, 0, 0.3);
 }
 
-.contacts form {
+.modal-map {
+/*    display: none;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 960px;
+    height: 559px;
+    margin-top: -280px;
+    margin-left: -480px;
+    background: url("../img/map-big.jpg");
+    box-shadow: 
+        0 10px 20px 0 rgba(4, 6, 6, 0.2),
+        55px 0 40px -55px rgba(4, 6, 6, 0.75),
+        -55px 0 40px -55px rgba(4, 6, 6, 0.75);
+    z-index: 5;
+}
+
+.modal-overlay {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-form {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 760px;
+    margin-left: -490px;
+    padding: 85px 100px;
+    background-color: #ffffff;
+    box-shadow: 
+        0 10px 20px 0 rgba(4, 6, 6, 0.2),
+        55px 0 40px -55px rgba(4, 6, 6, 0.75),
+        -55px 0 40px -55px rgba(4, 6, 6, 0.75);
+    z-index: 5;
+}
+
+.modal-form-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    background-color: rgba(240, 197, 46, 0.5);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-form-close:hover {
+    background-color: rgba(240, 197, 46, 1)
+}
+
+.modal-form-close::before,
+.modal-form-close::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    width: 35px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 1px;
+}
+
+.modal-form-close:active::before,
+.modal-form-close:active::after {
+    background-color: #f5d76d;
+}
+
+.modal-form-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-form-close::after {
+    transform: rotate(-45deg);
+}
+
+.writeus-form {
+    margin: 0;
+    padding: 0;
+}
+
+.writeus-form label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+    color: #000000;
+}
+
+.letter-field {
+    margin-top: 30px;
+}
+
+.writeus-form input {
+    width: 360px;
+    height: 50px;
+}
+
+.writeus-form input,
+.letter-field textarea {
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(70, 70, 70, 1s);
+    border: 0;
+    background-color: #f2f2f2;
+}
+
+.writeus-form input:hover,
+.letter-field textarea:hover {
+background-color: #eaeaea;
+}
+
+.writeus-form input:focus,
+.letter-field textarea:focus {
+    outline: 3px solid #f7e296;
+}
+
+.writeus-form input:invalid,
+.letter-field textarea:invalid {
+    background-color: #f6dada;
+}
+
+.letter-field textarea {
+    padding-top: 15px;
+    width: 755px;
+}
+
+.letter-field textarea::-webkit-input-placeholder,
+.contacts form input::-webkit-input-placeholder {
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.left-input {
+    margin-right: 30px;
+}
+
+.left-input,
+.right-input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 360px;
+    font-size: 0;
+}
+
+.send-btn {
+    position: relative;
+    margin: 0;
+    padding: 0 40px;
+    margin-top: 65px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    z-index: 0;
+}
+
+.send-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    width: 100%;
+    height: 6px;
+    background: #f0c52e;
+    box-shadow: 0 0 0 1px f4d361;
+    z-index: -1;
+}
+
+.send-btn:hover::after {
+    height: 100%;
+    top: 0;
+    box-shadow: none;
+}
+
+.send-btn:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
-/*    margin-top: 87px;*/
     min-height: 323px;
     color: #ffffff;
     background: #464646;

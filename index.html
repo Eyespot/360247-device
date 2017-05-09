@@ -223,22 +223,30 @@
                     <a class="map" href="#map">
                         <img src="img/map.jpg" width="560" height="222" alt="Vive">
                     </a>
+                    <div class="modal-map">
+                        <button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
+                        <div id="yandex-map"></div>
+                    </div>
+                    <div class="modal-overlay"></div>
                     <a class="writeus" href="#">Напишите нам</a>
-                    <form action="https://echo.htmlacademy.ru" method="get">
-                        <div>
-                            <label for="name-field">Ваше имя:</label>
-                            <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
-                        </div>
-                        <div>
-                            <label for="email-field">Ваш e-mail:</label>
-                            <input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
-                        </div>
-                        <div>
-                            <label for="letter-field">Текст письма:</label>
-                            <textarea name="letter" id="letter-field" placeholder="В свободной форме"></textarea>
-                        </div>
-                        <button type="submit" name="send" id="send-btn" value="sent">Отправить</button>
-                    </form>
+                    <div class="modal-form">
+                        <form class="writeus-form clearfix" action="https://echo.htmlacademy.ru" method="get">
+                            <div class="left-input">
+                                <label for="name-field">Ваше имя:</label>
+                                <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+                            </div>
+                            <div class="right-input">
+                                <label for="email-field">Ваш e-mail:</label>
+                                <input type="text" name="email" id="email-field" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Для отправки ответа" required>
+                            </div>
+                            <div class="letter-field">
+                                <label for="letter-field">Текст письма:</label>
+                                <textarea name="letter" id="letter-field" placeholder="В свободной форме" required rows="10"></textarea>
+                            </div>
+                            <button class="send-btn" type="submit" name="send" id="send-btn" value="sent">Отправить</button>
+                        </form>
+                        <button class="modal-form-close" type="button" title="Закрыть">Закрыть</button>
+                    </div>
                 </div>
             </section>
         </main>
