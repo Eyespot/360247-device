@@ -206,16 +206,37 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    padding-left: 15px;
-    margin-left: 45px;
+    padding-left: 30px;
     font: inherit;
     color: #000000;
     vertical-align: bottom;
     text-decoration: inherit;
 }
 
+.profiled-header-user-block a:nth-child(2) {
+    margin-right: 50px;
+    opacity: 0.3;
+    padding: 0;
+}
+
+.profiled-header-user-block a:nth-child(3) {
+    margin-right: 30px;
+}
+
+.profiled-header-user-block a:nth-child(2)::before {
+    display: none;
+}
+
+.header-user-block a:not(:last-child) {
+    margin-right: 30px;
+}
+
 .header-user-block a:first-child {
-    margin-right: 172px;
+    margin-right: 203px;
+}
+
+.profiled-header-user-block .profile {
+    margin-right: 15px;
 }
 
 .header-user-block a:hover,
@@ -232,7 +253,7 @@ body {
 .profiled-header-user-block a::before {
     content: "";
     position: absolute;
-    left: -11px;
+    left: 4px;
     bottom: 4px;
     width: 13px;
     height: 12px;
@@ -243,7 +264,7 @@ body {
 .profiled-header-user-block a:nth-child(3)::before {
     width: 10px;
     height: 10px;
-    left: -6px;
+    left: 10px;
     bottom: 4px;
     background: url("../img/icons-spritesheet.png") no-repeat -416px -30px;
 }
@@ -251,7 +272,7 @@ body {
 .header-user-block a:last-child::before,
 .profiled-header-user-block a:last-child::before {
     width: 12px;
-    left: -9px;
+    left: 7px;
     background: url("../img/icons-spritesheet.png") no-repeat -344px -30px;
 }
 
@@ -532,17 +553,19 @@ border: 3px solid rgba(0, 0, 0, 1);
     z-index: -1;
 }
 
-.specification-info {
-    display: inline-block;
-    float: left;
-    margin-top: 45px;
-    margin-left: -40px;
-    margin-right: 119px;
+.specification {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
 }
 
-.specification-info:last-child {
-    margin-right: 0;
-/*    margin-left: 2px;*/
+.specification-info {
+    display: inline-block;
+    padding-top: 60px;
+}
+
+.specification-info:not(:last-child) {
+    margin-right: 75px;
 }
 
 .specification-info b {
@@ -554,7 +577,7 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .specification-info p {
-    margin-top: 5px;
+    margin-top: -1px;
     font-size: 13px;
 }
 
@@ -694,7 +717,7 @@ border: 3px solid rgba(0, 0, 0, 1);
     width: 160px;
     height: 6px;
     background: #f0c52e;
-    box-shadow: 0 0 0 1px f4d361;
+    box-shadow: 0 0 0 1px #f4d361;
     z-index: -1;
 }
 
@@ -872,6 +895,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .transport {
+    padding: 0;
+    margin: 0;
     margin-top: 71px;
     padding-left: 18px;
     list-style-type: circle;
@@ -905,7 +930,7 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .about-us {
-    margin-top: 49px;
+    margin-top: 54px;
     padding: 0 21px;
 }
 
@@ -972,8 +997,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .footer-user-block a {
     position: relative;
-    padding-left: 12px;
-    margin-right: 45px;
+    padding-left: 30px;
+    margin-right: 30px;
     font: inherit;
     color: #ffffff;
     vertical-align: bottom;
@@ -982,7 +1007,7 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .footer-user-block a:first-child {
-    margin-right: 47px;
+    margin-right: 27px;
 }
 
 .footer-user-block a:last-child {
@@ -995,8 +1020,8 @@ border: 3px solid rgba(0, 0, 0, 1);
     width: 15px;
     height: 15px;
     background: url("../img/icons-spritesheet.png") no-repeat -271px -30px;
-    left: -11px;
-    bottom: 0;
+    left: 7px;
+    bottom: 1px;
 }
 
 .footer-user-block a:nth-child(2)::before {
@@ -1029,6 +1054,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .footer-nav {
+    margin: 0;
+    padding: 0;
     float: left;
 }
 
@@ -1123,19 +1150,6 @@ border: 3px solid rgba(0, 0, 0, 1);
     position: relative;
     top: -5px;
     left: -2px;
-}
-
-.profiled-header-user-block a:nth-child(2) {
-    margin-right: 20px;
-    opacity: 0.3;
-}
-
-.profiled-header-user-block a:first-child {
-    margin-right: -46px;
-}
-
-.profiled-header-user-block a:nth-child(2)::before {
-    display: none;
 }
 
 .breadcrumbs {
@@ -1319,7 +1333,7 @@ border: 3px solid rgba(0, 0, 0, 1);
     content: "";
     position: absolute;
     top: 3px;
-    left: -2px;
+    left: 0;
     z-index: 1;
     width: 23px;
     height: 23px;
@@ -1478,23 +1492,24 @@ border: 3px solid rgba(0, 0, 0, 1);
     width: 830px;
 }
 
-.sort h3 {
-    float: left;
-    margin: 0;
-    padding: 0;
-    padding-top: 19px;
-    min-height: 50px;
-    padding-left: 72px;
-    background-color: #ebebeb;
-}
-
-.sort-list {
-    float: right;
+.sort {
     margin: 0;
     margin-bottom: 70px;
     padding: 0;
     padding-top: 19px;
     min-height: 50px;
+    background-color: #ebebeb;
+}
+
+.sort h3 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 72px;
+}
+
+.sort-list {
+    float: right;
     font-size: 0;
     background-color: #ebebeb;
 }
@@ -1589,6 +1604,19 @@ border: 3px solid rgba(0, 0, 0, 1);
     float: right;
     width: 360px;
     margin-left: 40px;
+}
+
+.catalog-item .flag{
+    position: absolute;
+    top: 29px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+     z-index:20;
+}
+
+.catalog-item .flag-new{
+    background: url("../img/NEW.png") no-repeat 0 0;
 }
 
 .catalog-item:hover .item-img {
@@ -1689,4 +1717,55 @@ border: 3px solid rgba(0, 0, 0, 1);
     min-height: 70px;
     float: right;
     background-color: #ebebeb;
+}
+
+.paginator a{
+    display: inline-block;
+    min-width: 20px;
+    height: 30px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 20px 7px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.paginator .active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.paginator a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.paginator a:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.paginator .prev {
+    margin-right: 193px;
+    padding: 20px 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.paginator .next {
+    margin-left: 183px;
+    padding: 20px 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.paginator .prev:hover,
+.paginator .next:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: #d9d9d9;
+}
+
+.paginator .prev:active,
+.paginator .next:active {
+    color: rgba(0, 0, 0, 0.3);
 }
