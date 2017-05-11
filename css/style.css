@@ -334,20 +334,19 @@ body {
 
 .catalog-menu {
     position: absolute;
-    left: -40px;
+    left: -60px;
     z-index: 1;
     display: none;
     margin: 0;
     padding: 0;
     padding-top: 33px;
+    padding-left: 20px;
     width: 1140px;
     min-height: 120px;
     background: #f7e296;
     list-style: none;
     font-size: 0;
-
     flex-wrap: wrap;
-/*    align-content: flex-start;*/
 }
 
 catalog-menu ul {
@@ -406,8 +405,8 @@ catalog-menu ul {
 .slider-controls {
     position: absolute;
     top: 315px;
-    left: 997px;
-    z-index: 1;
+    left: 0;
+    z-index: 5;
 }
 
 .slider-controls label {
@@ -677,8 +676,13 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .services {
     margin-bottom: 100px;
-    height: 288px;
+    /*height: 288px;*/
     background-color: #e5e5e5;
+}
+
+.benifits-container { 
+    width: 1160px; 
+    margin: 0 auto; 
 }
 
 .services input[type=radio] {
@@ -802,7 +806,7 @@ border: 3px solid rgba(0, 0, 0, 1);
     position: relative;
     float: left;
     margin-right: 120px;
-    min-height: 320px;
+    min-height: 290px;
     width: 690px;
 }
 
@@ -1654,7 +1658,7 @@ background-color: #eaeaea;
 }
 
 .price-controls input {
-    width: 68px;
+    width: 66px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     color: rgba(0, 0, 0, 0.2);
@@ -1844,12 +1848,25 @@ background-color: #eaeaea;
     margin: 0;
     padding: 0;
     padding-left: 72px;
+    width: 18%;
+}
+
+.sort-list-items {
+    float: left;
+    width: 88%;
+}
+
+.arrow-list {
+    text-align: right;
+    float: right;
+    width: 12%;
 }
 
 .sort-list {
     float: right;
     background-color: #ebebeb;
     font-size: 0;
+    width: 67.5%;
 }
 .sort-list a {
     display: inline-block;
@@ -1857,6 +1874,11 @@ background-color: #eaeaea;
     text-decoration: none;
     font-weight: normal;
     font-size: 14px;
+    margin-right: 27px;
+}
+
+.sort-list a:last-child {
+    margin-right: 0;
 }
 
 .sort-list a:not(.arrow) {
@@ -1873,18 +1895,6 @@ background-color: #eaeaea;
 
 .sort-list .active:not(.arrow) {
     color: rgba(0, 0, 0, 1);
-}
-
-.sort-list a:nth-child(1) {
-    margin-right: 27px;
-}
-
-.sort-list a:nth-child(2) {
-    margin-right: 29px;
-}
-
-.sort-list a:nth-child(3) {
-    margin-right: 212px;
 }
 
 .sort-list .arrow {
