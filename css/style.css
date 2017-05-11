@@ -1,76 +1,76 @@
 @font-face {
+    font-weight: 300;
     font-family: "OpenSans";
     src:
         url("../fonts/open_sans/opensanslight.woff") format("woff"),
         url("../fonts/open_sans/opensanslight.woff2") format("woff2");
-    font-weight: 300;
 }
 
 @font-face {
+    font-weight: normal;
     font-family: "OpenSans";
     src:
         url("../fonts/open_sans/opensans.woff") format("woff"),
         url("../fonts/open_sans/opensans.woff2") format("woff2");
-    font-weight: normal;
 }
 
 @font-face {
+    font-weight: 800;
     font-family: "Gilroy";
     src:
         url("../fonts/gilroy/gilroyextrabold.woff") format("woff"),
         url("../fonts/gilroy/gilroyextrabold.woff2") format("woff2");
-    font-weight: 800;
 }
 
 @font-face {
+    font-weight: 300;
     font-family: "Gilroy";
     src:
         url("../fonts/gilroy/gilroylight.woff") format("woff"),
         url("../fonts/gilroy/gilroylight.woff2") format("woff2");
-    font-weight: 300;
 }
 
 body {
-    font-size: 15px;
-    line-height: 30px;
-    color: #464646;
-    font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.01em;
-    min-width: 1200px;
     margin: 0;
+    min-width: 1200px;
+    color: #464646;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 30px;
 }
 
 .title1 {
-    font-size: 47px;
     color: #000000;
-    line-height: 1.2em;
-    font-family: "Gilroy";
-    font-weight: 800;
     letter-spacing: 0;
+    font-weight: 800;
+    font-size: 47px;
+    font-family: "Gilroy";
+    line-height: 1.2em;
 }
 
 .title2 {
-    font-size: 16px;
     color: #000000;
-    font-family: "Gilroy";
-    font-weight: 800;
-    letter-spacing: 0.2em;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: "Gilroy";
 }
 
 .title3 {
-    font-size: 18px;
     color: #000000;
-    font-family: "Gilroy";
-    font-weight: 800;
     letter-spacing: 0.01em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Gilroy";
 }
 
 .clearfix::after {
-    content: "";
     display: table;
     clear: both;
+    content: "";
 }
 
 .main-header {
@@ -79,9 +79,9 @@ body {
 
 .container,
 .container-catalog {
-    width: 1160px;
-    min-height: 299px;
     margin: 0 auto;
+    min-height: 299px;
+    width: 1160px;
 }
 
 .container-catalog {
@@ -111,20 +111,20 @@ body {
 
 .search-form {
     position: relative;
+    float: left;
     margin: 0;
     padding: 0;
-    float: left;
     border-bottom: 2px solid transparent;
 }
 
 .search-form::before {
-    content: "";
     position: absolute;
     top: 11px;
     left: 3px;
     width: 16px;
     height: 16px;
     background: url("../img/icons-spritesheet.png") no-repeat -821px -30px;
+    content: "";
 }
 
 .search-form input {
@@ -133,13 +133,13 @@ body {
     padding: 0;
     padding-left: 4px;
     height: 39px;
-    vertical-align: middle;
-    font: inherit;
-    color: #000000;
-    line-height: 36px;
-    letter-spacing: 0.01em;
     border: inherit;
     background-color: transparent;
+    color: #000000;
+    vertical-align: middle;
+    letter-spacing: 0.01em;
+    font: inherit;
+    line-height: 36px;
 }
 
 .search-form input::-webkit-input-placeholder {
@@ -148,9 +148,9 @@ body {
 
 .search-form input[type="text"] {
     float: left;
-    width: 312px;
-    padding-left: 38px;
     padding-bottom: 10px;
+    padding-left: 38px;
+    width: 312px;
     opacity: 0.3;
 }
 
@@ -159,37 +159,37 @@ body {
 }
 
 .search-form input[type="text"]:focus {
-    opacity: 1;
     outline: none;
     border-bottom: 2px solid #000000;
+    opacity: 1;
 }
 
 .search-btn {
+    float: right;
+    box-sizing:border-box;
     margin: 0;
     padding: 0 23px;
-    float: right;
     height: 49px;
-    font: inherit;
-    background: none;
-    border: none;
-    color: transparent;
     outline: 2px solid transparent;
-    box-sizing:border-box;
+    border: none;
+    background: none;
+    color: transparent;
+    font: inherit;
 }
 
 .search-form input[type="text"]:focus ~ .search-btn {
-    color: #000000;
     outline: 2px solid #000000;
+    color: #000000;
 }
 
 .search-form input[type="text"]:focus ~ .search-btn:hover {
-    color: #ffffff;
     background-color: #000000;
+    color: #ffffff;
 }
 
 .search-btn:active {
-    color: #4d4d4d;
     background-color: #000000;
+    color: #4d4d4d;
 }
 
 .header-user-block,
@@ -206,16 +206,16 @@ body {
     margin: 0;
     padding: 0;
     padding-left: 30px;
-    font: inherit;
     color: #000000;
     vertical-align: bottom;
     text-decoration: inherit;
+    font: inherit;
 }
 
 .profiled-header-user-block a:nth-child(2) {
     margin-right: 50px;
-    opacity: 0.3;
     padding: 0;
+    opacity: 0.3;
 }
 
 .profiled-header-user-block a:nth-child(3) {
@@ -250,28 +250,28 @@ body {
 
 .header-user-block a::before,
 .profiled-header-user-block a::before {
-    content: "";
     position: absolute;
-    left: 4px;
     bottom: 4px;
+    left: 4px;
     width: 13px;
     height: 12px;
     background: url("../img/icons-spritesheet.png") no-repeat -486px -30px;
+    content: "";
 }
 
 .header-user-block a:nth-child(2)::before,
 .profiled-header-user-block a:nth-child(3)::before {
+    bottom: 4px;
+    left: 10px;
     width: 10px;
     height: 10px;
-    left: 10px;
-    bottom: 4px;
     background: url("../img/icons-spritesheet.png") no-repeat -416px -30px;
 }
 
 .header-user-block a:last-child::before,
 .profiled-header-user-block a:last-child::before {
-    width: 12px;
     left: 7px;
+    width: 12px;
     background: url("../img/icons-spritesheet.png") no-repeat -344px -30px;
 }
 
@@ -282,13 +282,13 @@ body {
 .main-navigation a {
     margin: 0;
     padding: 0;
-    font-family: "Gilroy";
+    color: #000000;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     font-weight: 800;
     font-size: 18px;
-    text-decoration: inherit;
-    color: #000000;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    font-family: "Gilroy";
 }
 
 .main-navigation a:hover {
@@ -300,13 +300,13 @@ body {
 }
 
 .main-navigation::after {
-    content: "";
     position: absolute;
-    left: 600px;
     top: 116px;
+    left: 600px;
     width: 100px;
     height: 7px;
     background-color: #ffffff;
+    content: "";
 }
 
 .catalog {
@@ -316,39 +316,43 @@ body {
 }
 
 .catalog > li {
+    position: relative;
     float: left;
     width: 240px;
-    position: relative;
     cursor: pointer;
 }
 
 .catalog-title:before {
-    content: "";
     position: absolute;
-    right: -6px;
     top: 6px;
+    right: -6px;
     width: 16px;
     height: 16px;
     background: url("../img/icons-spritesheet.png") no-repeat -745px -30px;
+    content: "";
 }
 
 .catalog-menu {
+    position: absolute;
+    left: -40px;
+    z-index: 1;
     display: none;
     margin: 0;
-    padding: 0 60px;
-    list-style: none;
+    padding: 0;
     padding-top: 33px;
-    position: absolute;
-    left: -60px;
-    width: 1040px;
-    height: 120px;
-    font-size: 0;
+    width: 1140px;
+    min-height: 120px;
     background: #f7e296;
-    z-index: 1;
-    flex-direction: column;
+    list-style: none;
+    font-size: 0;
+
     flex-wrap: wrap;
-    align-content: flex-start;
-    
+/*    align-content: flex-start;*/
+}
+
+catalog-menu ul {
+    padding: 0;
+    margin: 0;
 }
 
 .catalog > li:hover .catalog-menu {
@@ -356,13 +360,13 @@ body {
 }
 
 .catalog-menu a {
-    font-weight: 300;
-    font-size: 15px;
+    margin-right: 58px;
     color: #000000;
     text-transform: none;
     letter-spacing: 0.01em;
+    font-weight: 300;
+    font-size: 15px;
     line-height: 36px;
-    margin-right: 58px;
 }
 
 .services-menu {
@@ -373,7 +377,9 @@ body {
     display: inline-block;
     float: left;
     padding-left: 20px;
+    vertical-align: middle;
 }
+
 .services-menu a:first-child {
     margin-right: 14px;
 }
@@ -384,8 +390,8 @@ body {
 
 .services-menu a:last-child {
     float: right;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .slider {
@@ -399,20 +405,21 @@ body {
 
 .slider-controls {
     position: absolute;
-    left: 997px;
     top: 315px;
+    left: 997px;
     z-index: 1;
 }
 
 .slider-controls label {
     display: inline-block;
-    width: 4px;
-    height: 4px;
     margin: 0 3px;
     margin-right: 17px;
-    cursor: pointer;
-    border-radius: 50%;
+    width: 4px;
+    height: 4px;
     border: 3px solid rgba(178, 178, 178, 0.3);
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 .slider-controls label:hover {
@@ -454,8 +461,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .slider-item {
     float: left;
-    width: 1040px;
     padding:  0 60px;
+    width: 1040px;
 }
 
 .slider-slides {
@@ -473,19 +480,19 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .quadro {
     margin: 0;
-    margin-left: -25px;
     margin-top: 65px;
+    margin-left: -25px;
 }
 
 .slider-info {
+    position: relative;
+    z-index: 1;
+    float: right;
     margin: 0;
     padding: 0;
     padding-top: 40px;
-    position: relative;
-    float: right;
-    width: 501px;
     min-height: 365px;
-    z-index: 1;
+    width: 501px;
 }
 
 .slider-info h2 {
@@ -498,39 +505,38 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .slider-info a {
     position: relative;
+    display: inline-block;
+    box-sizing: border-box;
     margin-top: 28px;
     padding: 5px 45px;
     padding-left: 45px;
-    display: inline-block;
-    vertical-align: middle;
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: 0.2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000000;
     width: 220px;
     height: 40px;
-    box-sizing: border-box;
+    color: #000000;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Gilroy";
 }
 
 .slider-info a::after {
-    content: "";
-    display: block;
     position: absolute;
-    left: 0px;
     top: 16px;
+    left: 0px;
+    z-index: -1;
+    display: block;
     width: 100%;
     height: 6px;
     background: #f0c52e;
-    box-shadow: 0 0 0 1px f4d361;
-    z-index: -1;
+    content: "";
 }
 
 .slider-info a:hover::after {
-    height: 100%;
     top: 0;
+    height: 100%;
     box-shadow: none;
 }
 
@@ -539,28 +545,29 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .slider-number {
+    position: absolute;
+    top: 61px;
+    right: -14px;
+    z-index: -1;
     margin: 0;
     padding: 0;
-    position: absolute;
-    font-family: "Gilroy";
+    color: #ffffff;
+    letter-spacing: 0.01em;
     font-weight: 800;
     font-size: 180px;
-    letter-spacing: 0.01em;
-    color: #ffffff;
-    right: -14px;
-    top: 61px;
-    z-index: -1;
+    font-family: "Gilroy";
 }
 
 .specification {
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-size: 0;
 }
 
 .specification-info {
     display: inline-block;
     padding-top: 60px;
+    vertical-align: middle;
 }
 
 .specification-info:not(:last-child) {
@@ -568,11 +575,11 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .specification-info b {
-    font-family: "Gilroy";
+    color: #000000;
+    letter-spacing: 0.01em;
     font-weight: 300;
     font-size: 36px;
-    letter-spacing: 0.01em;
-    color: #000000;
+    font-family: "Gilroy";
 }
 
 .specification-info p {
@@ -586,11 +593,12 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .popular-list {
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
     min-height: 230px;
+
+    justify-content: space-between;
 }
 
 .popular-list li {
@@ -599,18 +607,18 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .popular-item {
+    display: block;
     margin: 0;
     padding: 0;
-    display: block;
     width: 160px;
     height: 160px;
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: 0.01em;
+    background: url("../img/popularspritesheet.png") #f7e296 no-repeat 5px 25px;
     color: #000000;
     text-decoration: none;
-    background: url("../img/popularspritesheet.png") #f7e296 no-repeat 5px 25px;
+    letter-spacing: 0.01em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Gilroy";
 }
 
 .popular-item:hover {
@@ -669,8 +677,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .services {
     margin-bottom: 100px;
-    background-color: #e5e5e5;
     height: 288px;
+    background-color: #e5e5e5;
 }
 
 .services input[type=radio] {
@@ -682,42 +690,42 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .slider-controls2 {
+    float: left;
     padding: 0;
     padding-top: 20px;
-    font-family: "Gilroy";
+    width: 277px;
+    min-height: 299px;
+    border-right: 7px solid;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     font-weight: 800;
     font-size: 18px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
-    float: left;
-    width: 277px;
-    height: 299px;
-    border-right: 7px solid;
+    font-family: "Gilroy";
 }
 
 .slider-controls2 label {
     position: relative;
+    z-index: 0;
     display: block;
-    cursor: pointer;
-    min-height: 35px;
+    margin-bottom: 29px;
     padding: 0 20px;
     padding-top: 5px;
-    margin-bottom: 29px;
-    z-index: 0;
+    min-height: 35px;
+    cursor: pointer;
 }
 
 .slider-controls2 label::after {
-    content: "";
-    display: block;
     position: absolute;
-    left: 0px;
     top: 12px;
+    left: 0px;
+    z-index: -1;
+    display: block;
     width: 160px;
     height: 6px;
     background: #f0c52e;
     box-shadow: 0 0 0 1px #f4d361;
-    z-index: -1;
+    content: "";
 }
 
 .slider-controls2 label:first-child::after {
@@ -725,8 +733,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .slider-controls2 label:hover::after {
-    height: 100%;
     top: 0;
+    height: 100%;
     box-shadow: none;
 }
 
@@ -780,30 +788,30 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .services-inner {
     position: relative;
-    overflow: hidden;
     top: -70px;
+    overflow: hidden;
 }
 
 .services-slides {
-    width: 300%;
     float: left;
     padding-left: 117px;
+    width: 300%;
 }
 
 .service-block {
     position: relative;
-    margin-right: 120px;
     float: left;
-    width: 690px;
+    margin-right: 120px;
     min-height: 320px;
+    width: 690px;
 }
 
 .service-block::after {
-    content: "";
     position: absolute;
-    background: url("../img/services-spritesheet.png") no-repeat -246px -30px;
-    left: 551px;
     top: 55px;
+    left: 551px;
+    background: url("../img/services-spritesheet.png") no-repeat -246px -30px;
+    content: "";
 }
 
 .delivery::after {
@@ -812,8 +820,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .warranty::after {
-    left: 517px;
     top: 30px;
+    left: 517px;
     width: 171px;
     height: 195px;
     background-position: -442px -30px;
@@ -840,8 +848,8 @@ border: 3px solid rgba(0, 0, 0, 1);
 .logotypes a {
     float: left;
     margin-right: 40px;
-    filter: grayscale(1);
     opacity: 0.2;
+    filter: grayscale(1);
 }
 
 .logotypes a:last-child {
@@ -850,13 +858,13 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .logotypes a:hover {
-    filter: none;
     opacity: 1;
+    filter: none;
 }
 
 .info {
     margin-top: -97px;
-    margin-bottom: 87px;
+    margin-bottom: 69px;
 }
 
 .info .title1 {
@@ -864,12 +872,12 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .info .title1::before {
-    content: "";
     position: absolute;
+    top: -48px;
     width: 80px;
     height: 7px;
     background: #000000;
-    top: -48px;
+    content: "";
 }
 
 .info p {
@@ -883,21 +891,21 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .transport {
-    padding: 0;
     margin: 0;
     margin-top: 71px;
+    padding: 0;
     padding-left: 18px;
     list-style-type: circle;
     list-style-image: url(../img/list-circle.png);
 }
 
 .transport li {
-    font-family: "Gilroy";
+    margin-bottom: 10px;
+    padding-left: 18px;
+    color: #000000;
     font-weight: 800;
     font-size: 16px;
-    color: #000000;
-    padding-left: 18px;
-    margin-bottom: 10px;
+    font-family: "Gilroy";
 }
 
 .contacts {
@@ -908,67 +916,63 @@ border: 3px solid rgba(0, 0, 0, 1);
 .map {
     display: inline-block;
     margin-top: 9px;
+    vertical-align: middle;
 }
 
 .about-us,
 .writeus {
     position: relative;
     margin: 0;
-    padding: 0 40px;
     margin-top: 65px;
+    padding: 0 40px;
 }
 
 .about-us {
-    margin-top: 54px;
-    padding: 0 21px;
     display: inline-block;
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
+    margin-top: 39px;
+    padding: 15px 22px;
     color: #000000;
+    vertical-align: middle;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Gilroy";
 }
 
 .writeus {
-    margin-top: 68px;
+    padding: 15px 40px;
     display: inline-block;
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
+    margin-top: 53px;
     color: #000000;
+    vertical-align: middle;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    cursor: pointer;
-    border: 0;
-    background: none;
-    outline: 0;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Gilroy";
 }
 
 .about-us::after,
 .writeus::after {
-    content: "";
-    display: block;
     position: absolute;
+    top: 43%;
     left: 0px;
-    top: 12px;
+    z-index: -1;
+    display: block;
     width: 100%;
-    height: 6px;
+    height: 14%;
     background: #f0c52e;
     box-shadow: 0 0 0 1px f4d361;
-    z-index: -1;
-}
-
-.writeus::after {
-    top: 8px;
+    content: "";
 }
 
 .about-us:hover::after,
 .writeus:hover::after {
-    height: 100%;
     top: 0;
+    height: 100%;
     box-shadow: none;
 }
 
@@ -978,28 +982,28 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .modal-map {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 960px;
-    height: 559px;
+    z-index: 15;
+    display: none;
     margin-top: -280px;
     margin-left: -480px;
+    width: 960px;
+    height: 559px;
     background: url("../img/map-big.jpg");
     box-shadow: 
         0 10px 20px 0 rgba(4, 6, 6, 0.2),
         55px 0 40px -55px rgba(4, 6, 6, 0.75),
         -55px 0 40px -55px rgba(4, 6, 6, 0.75);
-    z-index: 15;
 }
 
 .modal-overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
+    display: none;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -1015,12 +1019,12 @@ border: 3px solid rgba(0, 0, 0, 1);
     right: 22px;
     width: 55px;
     height: 55px;
-    font-size: 0;
-    background-color: rgba(240, 197, 46, 0.5);
+    outline: none;
     border: 0;
     border-radius: 50%;
+    background-color: rgba(240, 197, 46, 0.5);
+    font-size: 0;
     cursor: pointer;
-    outline: none;
 }
 
 .modal-map-close:hover {
@@ -1029,14 +1033,14 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .modal-map-close::before,
 .modal-map-close::after {
-    content: "";
     position: absolute;
     top: 26px;
     left: 10px;
     width: 35px;
     height: 3px;
-    background-color: #ffffff;
     border-radius: 1px;
+    background-color: #ffffff;
+    content: "";
 }
 
 .modal-map-close:active::before,
@@ -1080,19 +1084,19 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .modal-form {
-    display: none;
     position: fixed;
     top: 10%;
     left: 50%;
-    width: 760px;
+    z-index: 5;
+    display: none;
     margin-left: -490px;
     padding: 85px 100px;
+    width: 760px;
     background-color: #ffffff;
     box-shadow: 
         0 10px 20px 0 rgba(4, 6, 6, 0.2),
         55px 0 40px -55px rgba(4, 6, 6, 0.75),
         -55px 0 40px -55px rgba(4, 6, 6, 0.75);
-    z-index: 5;
 }
 
 .modal-form-show {
@@ -1110,12 +1114,12 @@ border: 3px solid rgba(0, 0, 0, 1);
     right: 22px;
     width: 55px;
     height: 55px;
-    font-size: 0;
-    background-color: rgba(240, 197, 46, 0.5);
+    outline: none;
     border: 0;
     border-radius: 50%;
+    background-color: rgba(240, 197, 46, 0.5);
+    font-size: 0;
     cursor: pointer;
-    outline: none;
 }
 
 .modal-form-close:hover {
@@ -1124,14 +1128,14 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .modal-form-close::before,
 .modal-form-close::after {
-    content: "";
     position: absolute;
     top: 26px;
     left: 10px;
     width: 35px;
     height: 3px;
-    background-color: #ffffff;
     border-radius: 1px;
+    background-color: #ffffff;
+    content: "";
 }
 
 .modal-form-close:active::before,
@@ -1158,10 +1162,10 @@ border: 3px solid rgba(0, 0, 0, 1);
     display: block;
     margin-top: 2px;
     margin-bottom: 3px;
-    font-family: "Gilroy";
+    color: #000000;
     font-weight: 800;
     font-size: 18px;
-    color: #000000;
+    font-family: "Gilroy";
 }
 
 .letter-field {
@@ -1175,15 +1179,15 @@ border: 3px solid rgba(0, 0, 0, 1);
 
 .writeus-form input,
 .letter-field textarea {
+    margin: 0;
     padding: 0;
     padding-left: 15px;
-    margin: 0;
-    font-family: "OpenSans";
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(70, 70, 70, 1s);
     border: 0;
     background-color: #f2f2f2;
+    color: rgba(70, 70, 70, 1s);
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "OpenSans";
 }
 
 .writeus-form input:hover,
@@ -1208,10 +1212,10 @@ background-color: #eaeaea;
 
 .letter-field textarea::-webkit-input-placeholder,
 .contacts form input::-webkit-input-placeholder {
-    font-family: "OpenSans";
+    color: rgba(70, 70, 70, 0.4);
     font-weight: normal;
     font-size: 14px;
-    color: rgba(70, 70, 70, 0.4);
+    font-family: "OpenSans";
 }
 
 .left-input {
@@ -1221,45 +1225,45 @@ background-color: #eaeaea;
 .left-input,
 .right-input {
     display: inline-block;
-    vertical-align: middle;
     width: 360px;
+    vertical-align: middle;
     font-size: 0;
 }
 
 .send-btn {
     position: relative;
+    z-index: 0;
     margin: 0;
-    padding: 0 40px;
     margin-top: 65px;
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
+    padding: 0 40px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    background-color: transparent;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Gilroy";
     cursor: pointer;
-    outline: 0;
-    border: 0;
-    z-index: 0;
 }
 
 .send-btn::after {
-    content: "";
-    display: block;
     position: absolute;
-    left: 0px;
     top: 8px;
+    left: 0px;
+    z-index: -1;
+    display: block;
     width: 100%;
     height: 6px;
     background: #f0c52e;
     box-shadow: 0 0 0 1px f4d361;
-    z-index: -1;
+    content: "";
 }
 
 .send-btn:hover::after {
-    height: 100%;
     top: 0;
+    height: 100%;
     box-shadow: none;
 }
 
@@ -1269,8 +1273,8 @@ background-color: #eaeaea;
 
 .main-footer {
     min-height: 323px;
-    color: #ffffff;
     background: #464646;
+    color: #ffffff;
 }
 
 .footer-topline {
@@ -1284,12 +1288,13 @@ background-color: #eaeaea;
 }
 
 .footer-logo::after {
-    content: "";
     position: absolute;
     top: 173px;
+    left: 0;
     width: 80px;
     height: 7px;
     background-color: #ffc600;
+    content: "";
 }
 
 .footer-user-block {
@@ -1299,12 +1304,12 @@ background-color: #eaeaea;
 
 .footer-user-block a {
     position: relative;
-    padding-left: 30px;
     margin-right: 30px;
-    font: inherit;
+    padding-left: 30px;
     color: #ffffff;
     vertical-align: bottom;
     text-decoration: inherit;
+    font: inherit;
     opacity: 0.7;
 }
 
@@ -1317,13 +1322,13 @@ background-color: #eaeaea;
 }
 
 .footer-user-block a::before {
-    content: "";
     position: absolute;
+    bottom: 1px;
+    left: 7px;
     width: 15px;
     height: 15px;
     background: url("../img/icons-spritesheet.png") no-repeat -271px -30px;
-    left: 7px;
-    bottom: 1px;
+    content: "";
 }
 
 .footer-user-block a:nth-child(2)::before {
@@ -1348,17 +1353,17 @@ background-color: #eaeaea;
 
 .adress {
     display: inline-block;
-    vertical-align: middle;
     float: left;
-    width: 210px;
     margin-top: -3px;
     margin-right: 112px;
+    width: 210px;
+    vertical-align: middle;
 }
 
 .footer-nav {
+    float: left;
     margin: 0;
     padding: 0;
-    float: left;
 }
 
 .footer-nav li {
@@ -1367,16 +1372,16 @@ background-color: #eaeaea;
 
 .footer-nav a {
     margin: 0;
-    margin-left: 5px;
     margin-right: 25px;
+    margin-left: 5px;
     padding: 0;
-    font-family: "Gilroy";
+    color: #ffffff;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     font-weight: 800;
     font-size: 18px;
-    text-decoration: inherit;
-    color: #ffffff;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    font-family: "Gilroy";
 }
 
 .footer-nav a:hover {
@@ -1388,10 +1393,10 @@ background-color: #eaeaea;
 }
 
 .phone-number {
-    margin-top: -3px;
     display: inline-block;
-    vertical-align: middle;
     float: right;
+    margin-top: -3px;
+    vertical-align: middle;
 }
 
 .footer-bottomline {
@@ -1405,13 +1410,13 @@ background-color: #eaeaea;
 
 .social-btn {
     display: inline-block;
+    margin-right: 10px;
     width: 40px;
     height: 40px;
-    margin-right: 10px;
-    vertical-align: middle;
     border-radius: 50%;
-    font-size: 0;
     background: url("../img/icons-spritesheet.png") no-repeat;
+    vertical-align: middle;
+    font-size: 0;
     opacity: 0.3;
 }
 
@@ -1436,8 +1441,9 @@ background-color: #eaeaea;
 }
 
 .academy {
-    margin-top: 3px;
+    font-size: 0;
     float: right;
+    margin-top: 3px;
 }
 
 .logo:hover {
@@ -1455,8 +1461,8 @@ background-color: #eaeaea;
 }
 
 .breadcrumbs-container {
-    width: 1160px;
     margin: 0 auto;
+    width: 1160px;
 }
 
 .breadcrumbs {
@@ -1475,9 +1481,10 @@ background-color: #eaeaea;
     margin-top: 16px;
     margin-right: 16px;
     padding-right: 16px;
-    font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .breadcrumbs a:hover:not(:last-child) {
@@ -1489,15 +1496,15 @@ background-color: #eaeaea;
 }
 
 .breadcrumbs a::before {
-    content: "";
     position: absolute;
     top: 13px;
     right: 0px;
     width: 4px;
     height: 4px;
     border: 1px solid #000000;
-    border-left-style: none;
     border-bottom-style: none;
+    border-left-style: none;
+    content: "";
     transform: rotate(45deg);
 }
 
@@ -1508,17 +1515,17 @@ background-color: #eaeaea;
 .catalog-content-left {
     float: left;
     width: calc(50% - 251px);
-    background-color: rgba(0,0,0,.08);
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .catalog-content-left-title-container {
-    background-color: rgba(0,0,0,.08);
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .catalog-content-left-title-wrap {
     float: right;
-    width: 270px;
     padding: 4px 0 3px 60px;
+    width: 270px;
 }
 
 .catalog-content-left-inner {
@@ -1532,7 +1539,7 @@ background-color: #eaeaea;
 
 .catalog-content-right-title-container {
     margin-bottom: 60px;
-    background-color: rgba(0,0,0,.08);
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .catalog-content-right-title-wrap {
@@ -1556,9 +1563,9 @@ background-color: #eaeaea;
     margin: 0;
     margin-top: 70px;
     padding: 0;
-    font-size: 14px;
-    color: #000000;
     border: 0;
+    color: #000000;
+    font-size: 14px;
 }
 
 .filter fieldset:nth-child(2) {
@@ -1570,26 +1577,26 @@ background-color: #eaeaea;
 
 .filter legend {
     position: relative;
-    font-family: "Gilroy";
+    color: #000000;
+    letter-spacing: 0.01em;
     font-weight: 800;
     font-size: 18px;
-    letter-spacing: 0.01em;
-    color: #000000;
+    font-family: "Gilroy";
 }
 
 .filter legend::before {
-    content: "";
     position: absolute;
     top: -9px;
     width: 200px;
     height: 2px;
     background: #000000;
+    content: "";
 }
 
 .range-controls {
     position: relative;
-    padding-top: 32px;
     margin-bottom: 15px;
+    padding-top: 32px;
 }
 
 .range-controls .scale {
@@ -1610,16 +1617,16 @@ background-color: #eaeaea;
     left: 0;
     width: 10px;
     height: 10px;
-    cursor: pointer;
     border: 2px solid #000000;
     border-radius: 50%;
     background: #eeeeee;
+    cursor: pointer;
 }
 
 .range-controls .toggle:active {
     border: 3px solid #ffffff;
-    box-shadow: 0 4px 6px -3px #777777;
     background: #7eae29;
+    box-shadow: 0 4px 6px -3px #777777;
 }
 
 .range-controls .toggle-min {
@@ -1632,31 +1639,33 @@ background-color: #eaeaea;
 
 .price-controls {
     margin-top: -8px;
-    font-family: "Gilroy";
+    width: 200px;
+    color: rgba(0, 0, 0, 0.2);
     font-weight: 300;
     font-size: 0;
-    color: rgba(0, 0, 0, 0.2);
-    width: 200px;
+    font-family: "Gilroy";
 }
 
 .price-controls label {
-    font-size: 14px;
     display: inline-block;
     width: 89px;
+    vertical-align: baseline;
+    font-size: 14px;
 }
 
 .price-controls input {
-    font-family: "Gilroy";
+    width: 68px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.2);
     font-weight: 300;
     font-size: 14px;
-    width: 68px;
-    color: rgba(0, 0, 0, 0.2);
-    border: none;
+    font-family: "Gilroy";
 }
 
 .color-input label {
-    display: block;
     position: relative;
+    display: block;
     padding-left: 38px;
     cursor: pointer;
 }
@@ -1670,7 +1679,6 @@ background-color: #eaeaea;
 }
 
 .color-input label::before {
-    content: "";
     position: absolute;
     top: 3px;
     left: 0;
@@ -1678,11 +1686,11 @@ background-color: #eaeaea;
     width: 23px;
     height: 23px;
     background: #dbdbdb;
+    content: "";
 }
 
 .color-input input[type="checkbox"]:checked:active ~ label::after,
 .color-input label::after {
-    content: "";
     position: absolute;
     top: -50px;
     left: -76px;
@@ -1692,8 +1700,9 @@ background-color: #eaeaea;
     border: 2px solid transparent;
     border-top-style: none;
     border-right-style: none;
-    transform: rotate(-205deg);
+    content: "";
     transition: 0.3s ease-out;
+    transform: rotate(-205deg);
 }
 
 .color-input label:hover::before {
@@ -1706,10 +1715,10 @@ background-color: #eaeaea;
 
 .color-input input[type="checkbox"]:active ~ label::after,
 .color-input input[type="checkbox"]:checked ~ label::after {
-    width: 9px;
-    height: 4px;
     top: 10px;
     left: 5px;
+    width: 9px;
+    height: 4px;
     border-color: #000000;
     border-top-style: none;
     border-right-style: none;
@@ -1738,7 +1747,6 @@ background-color: #eaeaea;
 
 
 .bluetooth-input label::before {
-    content: "";
     position: absolute;
     top: 3px;
     left: -2px;
@@ -1747,6 +1755,7 @@ background-color: #eaeaea;
     height: 19px;
     border: 2px solid #c6c6c6;
     border-radius: 50%;
+    content: "";
 }
 
 .bluetooth-input label:hover::before {
@@ -1759,15 +1768,15 @@ background-color: #eaeaea;
 
 .bluetooth-filter:active ~ label::after,
 .bluetooth-filter:checked ~ label::after {
-    content: "";
     position: absolute;
     top: 10px;
     left: 5px;
+    z-index: 2;
     width: 5px;
     height: 5px;
     border: 2px solid #000000;
     border-radius: 50%;
-    z-index: 2;
+    content: "";
 }
 
 .bluetooth-input div {
@@ -1782,18 +1791,18 @@ background-color: #eaeaea;
     position: relative;
     display: block;
     margin: 0;
-    padding: 0 40px;
-    margin-top: 45px;
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: rgba(0, 0, 0, 1);
+    margin-top: 30px;
+    padding: 15px 40px;
+    outline: none;
     border: none;
     background: none;
-    outline: none;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Gilroy";
+    cursor: pointer;
 }
 
 .bluetooth-input button[type="submit"]:active {
@@ -1801,19 +1810,19 @@ background-color: #eaeaea;
 }
 
 .bluetooth-input button[type="submit"]::before {
-    content: "";
     position: absolute;
+    top: 40%;
     left: 0;
-    top: 7px;
-    width: 100%;
-    height: 8px;
-    background-color: #f0c52e;
     z-index: -1;
+    width: 100%;
+    height: 16%;
+    background-color: #f0c52e;
+    content: "";
 }
 
 .bluetooth-input button[type="submit"]:hover::before {
-    height: 100%;
     top: 0;
+    height: 100%;
 }
 
 .items-block {
@@ -1839,14 +1848,15 @@ background-color: #eaeaea;
 
 .sort-list {
     float: right;
-    font-size: 0;
     background-color: #ebebeb;
+    font-size: 0;
 }
 .sort-list a {
     display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
     font-weight: normal;
     font-size: 14px;
-    text-decoration: none;
 }
 
 .sort-list a:not(.arrow) {
@@ -1879,8 +1889,8 @@ background-color: #eaeaea;
 
 .sort-list .arrow {
     display: inline-block;
-    font-size: 0;
     padding: 0;
+    font-size: 0;
 }
 
 .sort-list .arrow-down {
@@ -1893,30 +1903,31 @@ background-color: #eaeaea;
 
 .sort-list .arrow::before {
     display: inline-block;
-    content: "";
     border: 9px solid rgba(0, 0, 0, 0.2);
-    border-left-width: 9px;
     border-right-width: 9px;
-    border-left-color: transparent;
     border-right-color: transparent;
+    border-left-width: 9px;
+    border-left-color: transparent;
+    content: "";
+    vertical-align: middle;
 }
 
 .sort-list .arrow:hover::before {
     border-color: rgba(0, 0, 0, 0.4);
-    border-left-color: transparent;
     border-right-color: transparent;
+    border-left-color: transparent;
 }
 
 .sort-list .arrow:active::before {
     border-color: rgba(0, 0, 0, 1);
-    border-left-color: transparent;
     border-right-color: transparent;
+    border-left-color: transparent;
 }
 
 .arrow ~ .active::before {
     border-color: rgba(0, 0, 0, 1);
-    border-left-color: transparent;
     border-right-color: transparent;
+    border-left-color: transparent;
 }
 
 .sort-list .arrow-up::before {
@@ -1929,19 +1940,19 @@ background-color: #eaeaea;
 
 .catalog-item {
     position: relative;
-    margin-bottom: 37px;
     float: right;
-    width: 360px;
+    margin-bottom: 37px;
     margin-left: 40px;
+    width: 360px;
 }
 
 .catalog-item .flag{
     position: absolute;
     top: 29px;
     right: 27px;
+     z-index:20;
     width: 60px;
     height: 60px;
-     z-index:20;
 }
 
 .catalog-item .flag-new{
@@ -1957,20 +1968,22 @@ background-color: #eaeaea;
 }
 
 .catalog-item .btn {
-    display: none;
     position: absolute;
     top: 160px;
     left: 22%;
+    z-index: 1;
+    display: none;
     margin: 0;
-    padding: 0 40px;
-    font-family: "Gilroy";
+    padding: 10px 40px;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     font-weight: 800;
     font-size: 18px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 1);
-    z-index: 1;
+    font-family: "Gilroy";
+    background-color: transparent;
+    border: 0;
+    outline: 0;
 }
 
 .catalog-item .btn:active {
@@ -1978,14 +1991,14 @@ background-color: #eaeaea;
 }
 
 .catalog-item .btn::before {
-    content: "";
     position: absolute;
+    top: 40%;
     left: 0;
-    top: 11px;
-    width: 100%;
-    height: 8px;
-    background-color: #f0c52e;
     z-index: -1;
+    width: 100%;
+    height: 20%;
+    background-color: #f0c52e;
+    content: "";
 }
 
 .catalog-item .btn:hover::before {
@@ -1994,17 +2007,19 @@ background-color: #eaeaea;
 }
 
 .catalog-item .compare-btn {
-    display: none;
     position: absolute;
     top: 230px;
     left: 23%;
+    z-index: 1;
+    display: none;
     margin: 0;
     padding: 0 25px;
-    font-size: 13px;
-    letter-spacing: 0.01em;
-    text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    background-color: transparent;
+    letter-spacing: 0.01em;
+    font-size: 13px;
+    border: 0;
+    outline: 0;
 }
 
 .catalog-item .compare-btn:hover {
@@ -2020,48 +2035,48 @@ background-color: #eaeaea;
 }
 
 .title3 {
+    float: left;
     margin: 0;
     padding: 0;
-    float: left;
 }
 
 .title3 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 .catalog-item p {
+    float: right;
     margin: 0;
     padding: 0;
-    font-family: "Gilroy";
+    letter-spacing: 0.01em;
     font-weight: 300;
     font-size: 16px;
-    letter-spacing: 0.01em;
-    float: right;
+    font-family: "Gilroy";
 }
 
 .paginator {
-    margin-top: -10px;
-    width: 760px;
-    min-height: 70px;
     float: right;
+    margin-top: -10px;
+    min-height: 70px;
+    width: 760px;
     background-color: #ebebeb;
 }
 
 .paginator a{
     display: inline-block;
+    padding: 20px 7px;
     min-width: 20px;
     height: 30px;
-    font-family: "Gilroy";
+    color: rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     font-weight: 800;
     font-size: 16px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.3);
-    padding: 20px 7px;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
+    font-family: "Gilroy";
 }
 
 .paginator .active {
@@ -2090,8 +2105,8 @@ background-color: #eaeaea;
 
 .paginator .prev:hover,
 .paginator .next:hover {
-    color: rgba(0, 0, 0, 1);
     background-color: #d9d9d9;
+    color: rgba(0, 0, 0, 1);
 }
 
 .paginator .prev:active,
