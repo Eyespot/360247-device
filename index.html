@@ -47,9 +47,9 @@
         </header>
         <main>
             <section class="slider container clearfix">
-                <input type="radio" id="btn-1" name="toggle-slider" checked>
-                <input type="radio" id="btn-2" name="toggle-slider">
-                <input type="radio" id="btn-3" name="toggle-slider">
+                <input class="btn-1" type="radio" id="btn-1" name="toggle-slider" checked>
+                <input class="btn-2" type="radio" id="btn-2" name="toggle-slider">
+                <input class="btn-3" type="radio" id="btn-3" name="toggle-slider">
                 <div class="slider-inner">
                     <div class="slider-controls">
                         <label for="btn-1"></label>
@@ -159,9 +159,9 @@
             </nav>
             <section class="services clearfix">
                 <div class="container">
-                    <input type="radio" id="btn-4" name="toggle-services" checked>
-                    <input type="radio" id="btn-5" name="toggle-services">
-                    <input type="radio" id="btn-6" name="toggle-services">
+                    <input class="btn-4" type="radio" id="btn-4" name="toggle-services" checked>
+                    <input class="btn-5" type="radio" id="btn-5" name="toggle-services">
+                    <input class="btn-6" type="radio" id="btn-6" name="toggle-services">
                     <div class="slider-controls2">
                             <label for="btn-4">Доставка</label>
                             <label for="btn-5">Гарантия</label>
@@ -225,23 +225,25 @@
                     </a>
                     <div class="modal-map">
                         <button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
-                        <div id="yandex-map"></div>
+                        <div id="google-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2s!4v1494516926284" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <div class="modal-overlay"></div>
-                    <a class="writeus" href="#">Напишите нам</a>
+                    <button class="writeus">Напишите нам</button>
                     <div class="modal-form">
                         <form class="writeus-form clearfix" action="https://echo.htmlacademy.ru" method="get">
                             <div class="left-input">
                                 <label for="name-field">Ваше имя:</label>
-                                <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+                                <input type="text" name="name-field" id="name-field" placeholder="Представьтесь, пожалуйста">
                             </div>
                             <div class="right-input">
                                 <label for="email-field">Ваш e-mail:</label>
-                                <input type="text" name="email" id="email-field" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Для отправки ответа" required>
+                                <input type="text" name="email-field" id="email-field" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Для отправки ответа">
                             </div>
                             <div class="letter-field">
                                 <label for="letter-field">Текст письма:</label>
-                                <textarea name="letter" id="letter-field" placeholder="В свободной форме" required rows="10"></textarea>
+                                <textarea name="letter-field" id="letter-field" placeholder="В свободной форме" rows="10"></textarea>
                             </div>
                             <button class="send-btn" type="submit" name="send" id="send-btn" value="sent">Отправить</button>
                         </form>
@@ -289,5 +291,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
