@@ -1918,9 +1918,7 @@ background-color: #eaeaea;
 .sort-list .arrow::before {
     display: inline-block;
     border: 9px solid rgba(0, 0, 0, 0.2);
-    border-right-width: 9px;
     border-right-color: transparent;
-    border-left-width: 9px;
     border-left-color: transparent;
     content: "";
     vertical-align: middle;
