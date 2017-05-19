@@ -444,15 +444,15 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .btn-1:checked ~ .slider-inner .slider-slides {
-    transform: translate(0);
+    transform: translateX(0);
 }
 
 .btn-2:checked ~ .slider-inner .slider-slides {
-    transform: translate(-1160px);
+    transform: translateX(calc(-100% / 3));
 }
 
 .btn-3:checked ~ .slider-inner .slider-slides {
-    transform: translate(-2320px);
+    transform: translateX(calc(-100% / 1.5));
 }
 
 .slider-inner {
@@ -790,15 +790,15 @@ border: 3px solid rgba(0, 0, 0, 1);
 }
 
 .btn-4:checked ~ .services-inner .services-slides {
-    transform: translate(0);
+    transform: translateX(0);
 }
 
 .btn-5:checked ~ .services-inner .services-slides {
-    transform: translate(-805px);
+    transform: translateX(calc(-100% / 3.4));
 }
 
 .btn-6:checked ~ .services-inner .services-slides {
-    transform: translate(-1620px);
+    transform: translateX(calc(-100% / 1.7));
 }
 
 .services-inner {
@@ -1281,7 +1281,8 @@ background-color: #eaeaea;
     content: "";
 }
 
-.send-btn:hover::after {
+.send-btn:hover::after,
+.send-btn:focus::after {
     top: 0;
     height: 100%;
     box-shadow: none;
